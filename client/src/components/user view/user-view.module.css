@@ -1,0 +1,20 @@
+.users_cont {
+    margin: 12px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: 36px;
+    color: var(--color-text-main);
+    font-weight: 500;
+}
+
+.catalogs_cont {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    max-height: calc(100vh - 120px);
+}

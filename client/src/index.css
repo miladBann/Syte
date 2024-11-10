@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  /* Background colors */
+  --color-background-main: #858586; /* Light gray, main background of the app */
+  --color-background-secondary: #9f9feb;
+  --color-background-card: #ffffff; /* White, background color for cards and modals */
+  --color-background-sidebar: #bbbbc1; /* Dark gray, background color for sidebar area */
+
+  /* Primary colors */
+  --color-primary: #4a90e2; /* Blue, main accent color for buttons and icons */
+  --color-primary-hover: #4178c0; /* Darker blue, hover state for buttons and icons */
+
+  /* Secondary colors */
+  --color-secondary: #8b93a3; /* Muted gray, secondary text and border color */
+  --color-secondary-hover: #767d8d; /* Darker muted gray, hover for secondary elements */
+
+  /* Text colors */
+  --color-text-main: #272626; /* Dark gray, primary text color */
+  --color-text-secondary: #313131; /* Mid gray, secondary text color */
+  --color-text-muted: #999999; /* Light gray, muted text like placeholder text */
+
+  /* Action colors */
+  --color-success: #27ae60; /* Green, for success states or positive feedback */
+  --color-danger: #e74c3c; /* Red, for errors, alerts, or delete actions */
+  --color-warning: #f39c12; /* Yellow, for warnings */
+
+  /* Border colors */
+  --color-border: #e0e0e0; /* Light gray, for card and section borders */
+  --color-border-strong: #cccccc; /* Darker gray, for more pronounced borders */
+
+  /* Shadow colors */
+  --color-shadow: rgba(25, 24, 24, 0.8);
+}
+
+body {
+  margin: 20px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.container {
+  width: calc(100vw - 300px);
+  height: calc(100vh - 40px);
+  padding: 0px 30px;
+  border-radius: 10px;
+  background: linear-gradient(to right, var(--color-background-main), var(--color-background-secondary));
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  color: white;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+}
+
+button:hover {
+  border-radius: 50px;
+  scale: 1.05;
+  background-color: var(--color-primary-hover);
+}
+
+
+@media (max-width: 768px) {
+
+  body{
+    margin: 0px;
+  }
+
+  .wrapper {
+    gap: 0;
+    z-index: -10;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+  }
+}

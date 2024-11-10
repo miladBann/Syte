@@ -1,0 +1,19 @@
+.side_nav_cont {
+    width: 300px;
+    height: calc(100vh - 40px);
+    background: linear-gradient(90deg, rgba(117, 219, 33, 0.4), rgba(128, 0, 128, 0.4));
+    border-radius: 10px;
+    padding: 0 14px;
+    backdrop-filter: 50px;
+    -webkit-backdrop-filter: blur(50px);
+}
+
+.services_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+    max-height: calc(100vh - 300px);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}

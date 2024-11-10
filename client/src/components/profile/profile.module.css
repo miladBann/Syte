@@ -1,0 +1,22 @@
+.profile_cont {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-text-main);
+}
+
+.profile_cont figure {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.profile_cont img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
